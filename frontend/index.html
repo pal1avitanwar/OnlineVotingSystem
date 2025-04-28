@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Voting System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🗳️ Online Voting System</h1>
+
+    <!-- Register User -->
+    <h2>Register User</h2>
+    <form id="userForm">
+        <input type="text" placeholder="Name" id="userName" required>
+        <input type="email" placeholder="Email" id="userEmail" required>
+        <input type="password" placeholder="Password" id="userPassword" required>
+        <button type="submit">Register</button>
+    </form>
+    <div id="userMsg"></div>
+    <hr />
+
+    <!-- Register Candidate -->
+    <h2>Register Candidate</h2>
+    <form id="candidateForm">
+        <input type="text" id="candidateName" placeholder="Candidate Name" required />
+        <input type="text" id="candidateParty" placeholder="Party" required />
+        <button type="submit">Register Candidate</button>
+    </form>
+    <div id="candidateMsg"></div>
+    <hr />
+
+    <!-- Vote Section -->
+    <h2>Vote</h2>
+    <div id="candidateList"></div>
+    <hr />
+
+    <!-- Results -->
+    <h2>Results</h2>
+    <button onclick="getResults()">View Results</button>
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
